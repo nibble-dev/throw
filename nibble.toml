@@ -1,0 +1,15 @@
+[project]
+name = "throw"
+version = "0.1.0"
+language = "c"
+
+
+[nibbles]
+
+
+
+[build]
+srcs = ["src/throw.h"]
+cflags = []
+libs = []
+include_dirs = ["nibs"]
