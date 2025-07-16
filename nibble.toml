@@ -1,6 +1,8 @@
 [project]
 name = "throw"
 version = "0.1.0"
+repo = "nibble-dev/throw"
+description = "Create errors and throw them easily"
 language = "c"
 
 

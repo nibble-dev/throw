@@ -1,6 +1,6 @@
 # throw
 
-Create errors and trow them easily
+Create errors and throw them easily
 
 ## install
 
