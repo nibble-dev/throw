@@ -20,7 +20,7 @@ typedef struct {
 
 FILE *THROW_FD = NULL;
 
-void throw(void *type, char *msg);
+void throw_error(void *type, char *msg);
 
 void throw_fatal(void *type, char *msg);
 
@@ -33,7 +33,7 @@ error error_new(int code, char *name) {
     return err;
 }
 
-void throw(void *type, char *msg) {
+void throw_error(void *type, char *msg) {
     error *err = (error *)type;
     if (THROW_FD == NULL) {
         THROW_FD = stderr;
@@ -44,7 +44,7 @@ void throw(void *type, char *msg) {
 
 void throw_fatal(void *type, char *msg) {
     error *err = (error *)type;
-    throw(type, msg);
+    throw_error(type, msg);
     exit(err->code);
 }
 
